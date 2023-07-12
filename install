@@ -1,0 +1,14 @@
+unknown@unknown:~$ grep --color -iE 'vmx|svm' /proc/cpuinfo
+
+unknown@unknown:~$ lscpu | grep Virtualization
+Virtualization:                  VT-x
+
+
+
+unknown@unknown:~$ sudo apt install virt-manager qemu-system libvirt-daemon-system qemu-utils
+
+unknown@unknown:~$ sudo usermod -aG libvirt,kvm unknown
+unknown@unknown:~$ lsmod | grep -i kvm
+kvm_intel             380928  0
+kvm                  1146880  1 kvm_intel
+irqbypass              16384  1 kvm
