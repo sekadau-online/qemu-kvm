@@ -1,0 +1,1 @@
+apt install virt-manager ebtables dnsmasq qemu-kvm qemu-system-x86 seabios ovmf libvirt-daemon-system libvirt-daemon-system-systemd libvirt-daemon-driver-qemu libvirt-daemon-config-network libvirt-daemon libvirt-clients nftables
